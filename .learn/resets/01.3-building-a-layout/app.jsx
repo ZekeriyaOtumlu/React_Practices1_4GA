@@ -13,21 +13,11 @@ const data = {
 };
 
 let content = (
-	/**
-	 * define the variable 'content' here and fill it with the
-	 * needed code to render the bootstrap card
-	 **/
-
-	<div class="card m-5">
-		<img className="card-img-top" src={data.image} alt="Card image cap" />
-		<div className="card-body">
-			<h5 className="card-title">{data.cardTitle}</h5>
-			<p className="card-text">{data.cardDescription}</p>
-			<a href={data.button.url} className="btn btn-primary">
-				{data.button.label}
-			</a>
-		</div>
-	</div>
+		<img src={data.image} />
 );
+/**
+ * define the variable 'content' here and fill it with the
+ * needed code to render the bootstrap card
+ **/
 
 ReactDOM.render(content, document.querySelector("#myDiv"));
